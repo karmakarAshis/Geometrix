@@ -62,18 +62,18 @@
                     <figure><img src="images/parallelogram.png" alt="parallelogram" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p class="text-center text-2xl">Area (A) = w X i</p>
+                        <p class="text-center text-2xl">Area (A) = b X h</p>
                         <div class="mr-4 ml-2 space-y-4">
-                            <input id="rectangle-width" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="w">
+                            <input id="parallelogram-base" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="b">
                             <span>cm</span>
-                            <input id="rectangle-length" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="i">
+                            <input id="parallelogram-height" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="display-rectangle"> </span>cm<sup>2</sup></p>
+                            <p>Area: <span id="display-parallelogram"> </span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions ">
-                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -87,4 +87,5 @@
 </body>
 <script src="scripts/triangle.js"></script>
 <script src="scripts/rectangle.js"></script>
+<script src="scripts/parallelogram.js"></script>
 </html>
