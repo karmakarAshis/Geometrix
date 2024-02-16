@@ -1,19 +1,19 @@
 function calculateRectangleArea(){
     // get width from ui
-    const rectangleWidthInput = document.getElementById('triangle-base');
-    const triangleBaseText = triangleBaseInput.value;
-    const base = parseFloat(triangleBaseText);
+    const rectangleWidthInput = document.getElementById('rectangle-width');
+    const rectangleWidthText = rectangleWidthInput.value;
+    const width = parseFloat(rectangleWidthText);
 
     // get height from ui
-    const triangleHeightInput = document.getElementById('triangle-height');
-    const triangleHeightText = triangleHeightInput.value;
-    const height = parseFloat(triangleHeightText);
+    const rectangleLengthInput = document.getElementById('rectangle-length');
+    const rectangleLengthText = rectangleLengthInput.value;
+    const length = parseFloat(rectangleLengthText);
     
 
-    // calculate area
-    const area = 0.5 * base * height;
-    console.log(area);
+    //calculate area
+    const area = width * length;
+    // console.log(area);
     // display area
-    const triangleAreaSpan = document.getElementById('display-span');
-    triangleAreaSpan.innerText = area;
+    const rectangleAreaSpan = document.getElementById('display-rectangle');
+    rectangleAreaSpan.innerText = area;
 }
