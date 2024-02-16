@@ -19,58 +19,46 @@
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png"
-                            alt="triangle" /></figure>
+                    <figure><img src="images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p>Area = 0.5 X b X h</p>
+                        <p class="text-center text-2xl">Area (A) = 0.5 X b X h</p>
+                        <div class="mr-4 ml-2 space-y-4">
+                            <input id="triangle-base" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="b">
+                            <span>cm</span>
+                            <input id="triangle-height" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="h">
+                            <span>cm</span>
+                        </div>
                         <div>
-                            <input class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="b">
-                        <span>cm</span>
-                        <input class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="h">
-                        <span>cm</span>
+                            <p>Area: <span id="display-span"> </span>cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions ">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- triangle -->
+                <!-- rectangle -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                    <figure><img src="images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p class="text-center text-2xl">Area (A) = w X i</p>
+                        <div class="mr-4 ml-2 space-y-4">
+                            <input id="rectangle-width" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="w">
+                            <span>cm</span>
+                            <input id="triangle-height" class="w-24 text-3xl p-2 rounded-sm" type="text" placeholder="i">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="display-span"> </span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions ">
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- triangle -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- triangle -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
@@ -79,5 +67,6 @@
         </div>
     </main>
 </body>
-
+<script src="scripts/triangle.js"></script>
+<script src="scripts/rectangle.js"></script>
 </html>
